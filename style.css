@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+h1 {
+  margin: 0.3em 0 1em;
+  font-size: 4rem;
+  /* text-align: center; */
+  flex: 0;
+}
+.input-bar {
+  flex: 0;
+}
+table {
+  width: 100vw;
+}
+tr {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: left;
+  align-items: center;
+}
+tbody > tr:nth-child(2n-1) {
+  background-color: rgb(107, 77, 82);
+}
+
+thead tr {
+  margin: 1em 0;
+}
+tbody tr {
+  margin: 5px;
+}
+.id {
+  font-size: 0.6rem;
+  overflow-wrap: anywhere;
+  /* min-width: 200px; */
+}
