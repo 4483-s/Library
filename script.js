@@ -57,14 +57,12 @@ function displayBooks() {
     rmBtn.textContent = "Remove";
     rmBtn.addEventListener("click", function () {
       myLibrary.splice(
-        myLibrary.findIndex((v) => (v.id = idCell.textContent)),
+        myLibrary.findIndex((v) => v.id === idCell.textContent),
         1
       );
       aBook.remove();
-
       displayNumbers();
     });
-
     rmBtnCell.append(rmBtn);
     aBook.append(
       nCell,
